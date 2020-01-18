@@ -23,7 +23,6 @@ class BreweryClientTest {
         String uuid= "e5eadfac-af33-4fa6-96fe-4acc9befcfc6";
         BeerDto beerDto = client.getBeerById(uuid);
 
-        assertNotNull(beerDto);
         assertEquals(beerDto.getId().toString(), "e5eadfac-af33-4fa6-96fe-4acc9befcfc6");
 //        assertEquals(beerDto.getStyle(), "Red Bear");
         assertNull(beerDto.getUpc());
