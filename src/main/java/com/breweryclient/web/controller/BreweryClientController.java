@@ -33,7 +33,7 @@ public class BreweryClientController {
 
     @GetMapping("/random-beer/{beerId}")
     public ResponseEntity<BeerDto> getBeerByRandomId(@PathVariable("beerId") UUID uuid) {
-        return new ResponseEntity<>(client.getBeerByRandomId(uuid),HttpStatus.OK);
+        return new ResponseEntity<>(client.getBeerByRandomId(uuid), HttpStatus.OK);
     }
 
 

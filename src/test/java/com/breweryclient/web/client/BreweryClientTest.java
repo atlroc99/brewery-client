@@ -20,7 +20,7 @@ class BreweryClientTest {
 
     @Test
     void getBeerById() {
-        String uuid= "e5eadfac-af33-4fa6-96fe-4acc9befcfc6";
+        String uuid = "e5eadfac-af33-4fa6-96fe-4acc9befcfc6";
         BeerDto beerDto = client.getBeerById(uuid);
 
         assertEquals(beerDto.getId().toString(), "e5eadfac-af33-4fa6-96fe-4acc9befcfc6");

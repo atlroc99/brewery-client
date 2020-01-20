@@ -25,7 +25,7 @@ public class BreweryClient2 {
     }
 
     public BeerDto getBeerById(UUID uuid) {
-      return restTemplate.getForObject(apiHost + BEER_PATH_V1 + "/" + uuid.toString(), BeerDto.class);
+        return restTemplate.getForObject(apiHost + BEER_PATH_V1 + "/" + uuid.toString(), BeerDto.class);
     }
 
     public BeerDto getRandomBeer(UUID uuid) {
